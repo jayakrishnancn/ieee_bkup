@@ -1,0 +1,89 @@
+.banner{
+	width: 100%;
+	position: relative;
+	min-height: 450px;
+	background: url("../image/wide-pic.jpg") no-repeat 0 0 fixed; 
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+}
+.vis-mis{
+	width: 100%;
+	min-height:100px;
+	max-width: 900px;
+	background: transparent; 
+	position: absolute;
+	text-align: center;
+	display: block; 
+	-webkit-animation-name: example; /* Chrome, Safari, Opera */
+    animation-name: example;
+    -webkit-animation-duration: .8s; /* Chrome, Safari, Opera */
+    animation-duration: .8s;	
+    margin: -50px auto 0 auto; 
+    left: 0;
+    right: 0;
+}
+
+
+
+/* Chrome, Safari, Opera */
+@-webkit-keyframes example {
+    from {margin:400px auto;}
+    to {margin:-50px auto;}
+}
+
+/* Standard syntax */
+@keyframes example {
+    from {margin:1000px auto;}
+    to {margin:-50px auto;}
+}
+
+.vission,.mission
+{
+	background: #fff;
+	min-height: 200px;
+	min-width: 200px;
+	max-width: 300px;
+	padding: 5px 0 5px 0 ;
+	margin: 15px 10px 20px 10px;
+	display: inline-block;
+	vertical-align: middle;
+}
+.vission img,.mission img
+{
+ width: 150px;
+ height: 150px;
+ position: absolute;
+ margin: -80px -70px;
+ text-align: center;
+}
+.vission h1,.mission h1
+{
+	color: #599698;
+	font-size: 25px;
+	line-height: 28px;
+	text-align: center;
+	text-transform: capitalize;
+	margin: 50px auto 10px auto;
+	position: relative;
+}
+.vission p,.mission p
+{
+	color: #888888;
+	padding: 0 10px;
+	text-align: left;
+}
+
+ 
+
+
+@media only screen and (max-width: 800px) {
+
+.vis-mis{
+	width: 100%;  
+	position: relative; 
+	margin:-50px auto -185px auto ;
+}
+
+}

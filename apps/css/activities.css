@@ -1,0 +1,212 @@
+/* activities */
+.activities{
+	width: 90%;
+	max-width: 1000px;
+	margin:  190px auto 0 auto;
+	text-align: center;
+	min-height: 200px;
+}
+.activities .grp
+{
+	display: flex;
+	flex-direction: row-reverse;
+	flex-wrap:wrap;
+	justify-content: space-around;
+	align-items:center;
+	align-content:center ;
+}
+.activities .grp .small
+{
+	background: #fff;
+	width: 35%;
+	max-width: 400px;
+	min-width: 150px;
+	margin: 15px 0;
+	min-height: 145px;
+	order:0;/* flex child order 0*/
+	flex-grow:0;
+
+}
+.activities .grp .medium
+{ 
+	background: #fff;
+	width: 60%;
+	max-width: 800px;
+	min-width: 300px;
+	margin: 15px 0;
+	min-height: 200px;
+	order:0;/* flex child order 0*/
+	flex-grow:0;
+}
+.activities .max
+{ 
+	background: #fff;
+	width: 98%;
+	max-width: 1200px;
+	min-width: 500px;
+	margin: 15px 0;
+	min-height: 200px;
+	order:0;/* flex child order 0*/
+	flex-grow:0;
+}
+
+.activities .grp-container
+{
+	margin: 0;
+	white-space: nowrap;
+	align-self:flex-start;
+	position: relative;
+	border-radius: 0 0 5px 5px ;
+	overflow: hidden;
+}
+.activities .grp-container h1{
+	background: #035168;
+	color: #fff;
+	margin: 0;
+	text-align: left;
+	font-size: 18px;
+	line-height: 25px;
+	padding: 5px 15px;
+}
+
+.activities .grp-container .news-blk{
+	border-bottom: 3px solid #eee;
+	padding: 5px 15px;
+	margin:5px auto 0 auto;
+	text-align: left;
+	white-space:normal;
+	min-height: 30px;
+	max-height: 300px;
+}
+.activities .grp-container a{
+	color: #666;
+	text-decoration: none;
+	font-size: 14px;
+	line-height: 18px;
+	display: block;
+	white-space:normal;
+}
+.activities .grp-container a:hover{
+	color: #0299c6; 
+}
+
+
+.more-details{
+	background: #ededed;
+	position: relative;
+	padding: 5px;
+	height: 35px;
+	line-height: 25px;
+	text-align: right;
+}
+.more-details h2{
+	float: left;
+	color: #666;
+	font-size: 18px;
+	display: inline-block;
+	line-height: 25px;
+	padding: 5px;
+	text-transform: capitalize;
+}
+.more-details a.more{
+	color: #666;
+	font-size: 18px;
+	display: inline-block;
+	line-height: 25px;
+	padding: 5px;
+	text-transform: capitalize;
+
+}
+.more-details .share{
+	display: none;
+}
+
+ .grp-container:hover .share{
+	display: block;
+}
+
+
+
+.activities .grp-container img{
+	max-width: 100%;
+}
+
+.activities .grp-container .activity-name
+{
+    background: #fff;
+    position: absolute;
+    margin: -25px 4%;
+    padding: 5px 3%;
+    font-size: 18px;
+    line-height: 25px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    max-width: 86%;
+
+}
+.activities .grp-container p{
+    white-space: normal;
+    margin: 20px;
+    text-align: left;
+    font-size: 14px;
+    color: #666;
+}
+
+.fill {
+    overflow: hidden;
+    background-size: cover;
+    background-position: center;
+    background-image:url("pic.jpg");
+    width: 100%;
+    height: 300px;
+}
+
+.back-btn{
+
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1;
+    width: 50px;
+    height: 50px;
+    cursor:pointer;
+    background:#fff url('../image/back_green.png')2px 5px  no-repeat;
+    margin: -25px 50px;
+    border-radius: 50%;
+
+
+}
+div.white-details{
+    background: #fff;
+    border-top: 2px solid #ededed;
+    padding: 10px 40px;
+}
+div.white-details h2{
+	color: #999;
+	font-size: 14px;
+	line-height: 20px;
+	margin: 20px 0 20px 0;
+    white-space: pre-wrap;
+}
+
+.grp div.white-details .activity-name,
+.grp div.white-details .activity-name{ 
+	color:#222;
+	left:0;
+}
+
+
+@media only screen and (max-width: 800px) {
+
+.grp-container{
+	width: 100% !important;   
+}.activities .grp{
+	display: block;
+}
+
+.activities div{
+	min-width: 0px !important;
+	max-width: 1000px !important;
+}
+}
